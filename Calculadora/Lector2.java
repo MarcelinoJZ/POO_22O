@@ -16,6 +16,7 @@ public class Lector2 {
         num = sc.nextInt();
 
         System.out.println("Tu edad es: " +num );
+    
         
     }
 }
