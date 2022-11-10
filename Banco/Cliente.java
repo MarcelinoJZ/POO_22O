@@ -9,7 +9,7 @@ public class Cliente {
 
         System.out.println("Bienvenido al banco humilde");
         Cuenta ct = new Cuenta();
-        /*___________________________MENU________________________________________ */
+        /*___________________________  MENU  _______________________________ */
         Scanner sc = new Scanner(System.in);
         boolean salir = false;
         int opcion; 
@@ -33,8 +33,8 @@ public class Cliente {
 
                     while(!salir){
                             
-                        System.out.println("1. Deposito 1");
-                        System.out.println("2. Retiro 2");
+                        System.out.println("1. Deposito");
+                        System.out.println("2. Retiro");
                         System.out.println("3. Salir");
                             
                         System.out.println("Escribe una de las opciones");
