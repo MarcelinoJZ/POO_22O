@@ -1,3 +1,4 @@
+
 public class Servicio {
     String tipo;
     String habitacion;
@@ -20,7 +21,7 @@ public class Servicio {
 
     Servicio(int a){ // contrsuctor para tipo doble
         tipo = "Doble";
-        servicioHabitacion(2);
+        servicioHabitacion(a);
         servicioComedor(a);
         servicioAlbercas(2);
         bar = "Sin servicio de bar";
@@ -61,11 +62,6 @@ public class Servicio {
         servicioParques(1);
         
     }//fin contrsuctor para tipo presidencial
-
-
-
-
-
 
     public void servicioHabitacion(int opc){
         switch(opc){
