@@ -1,4 +1,3 @@
-
 public class Laptop {
     TarjetaMadre tarjetam = new TarjetaMadre();
     Procesador procesador = new  Procesador("Ryzen 9 7950X", 32, 16);
@@ -12,4 +11,4 @@ public class Laptop {
     TouchPad touch = new TouchPad(2);  
     Microfono microfono = new Microfono();
     Ventilador ventilador = new Ventilador();
-}
+}// Fin de la clse laptop
