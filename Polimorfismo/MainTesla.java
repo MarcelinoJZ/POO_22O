@@ -29,9 +29,7 @@ public class MainTesla {
         entrada =familiar;
         entrada.Velocidad();
 
-        
-
-        /*************************************************** */
+/*************************************************** */
 
     }// Fin del programa princiapl
     
