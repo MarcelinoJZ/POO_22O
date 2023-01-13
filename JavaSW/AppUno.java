@@ -20,7 +20,7 @@ public class AppUno {
 
         EventQueue.invokeLater(new Runnable(){
             public void run(){
-                Calculadora window = new Calculadora();
+                AppUno window = new AppUno();
                 window.frame.setVisible(true);
             }
         });//Fin del event Queue

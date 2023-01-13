@@ -12,14 +12,14 @@ public class Calculadora extends JFrame{
         new JButton("1"),  new JButton("2"), new JButton("3"), new JButton("+"),
         new JButton("4"),  new JButton("5"), new JButton("6"), new JButton("-"),  
         new JButton("7"),  new JButton("8"), new JButton("9"), new JButton("*"),
-        new JButton("C"),  new JButton("0"), new JButton(","), new JButton("/"),
+        new JButton("Borrar"),  new JButton("0"), new JButton(","), new JButton("/"),
         new JButton("=")
     };
-    private Dimension dmVentana = new Dimension(300,440);
+    private Dimension dmVentana = new Dimension(300,220);
     
     private double resultado = 0;
     private double numero;
-    private static final int SUMA = 1;
+    private static final int SUMA = 1; //creamos una constante de clase, un atributo común a todos los objetos de esa clase
     private static final int RESTA = 2;
     private static final int MULTIPLICACION = 3;
     private static final int DIVISION = 4;
@@ -30,7 +30,7 @@ public class Calculadora extends JFrame{
     private NumberFormat nf = NumberFormat.getInstance();
     
     public Calculadora(){
-        Dimension dmPantalla = Toolkit.getDefaultToolkit().getScreenSize();
+        Dimension dmPantalla = Toolkit.getDefaultToolkit().getScreenSize(); //Tamaño de pantalla
         int x = (dmPantalla.width - dmVentana.width) / 2;
         int y = (dmPantalla.height - dmVentana.height) / 2;
         this.setLocation(x,y);
@@ -57,15 +57,12 @@ public class Calculadora extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
         
-        lblResultado.setText("0,0");
+        lblResultado.setText("Ingresa numero");
         lblResultado.setHorizontalAlignment(JLabel.RIGHT);
         
         
         
     }
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         new Calculadora();
     }
@@ -102,7 +99,7 @@ public class Calculadora extends JFrame{
                     hayPunto = true;
                     break;
                 case "C":
-                    lblResultado.setText("0,0");
+                    lblResultado.setText("");
                     nuevoNumero = true;
                     hayPunto = false;
                     break;
@@ -150,7 +147,7 @@ public class Calculadora extends JFrame{
                     break;
             }
         }
-    }
+    }//Fin pulsar raton
     
     public void operar(int operacion){
         if (!nuevoNumero){
@@ -183,8 +180,8 @@ public class Calculadora extends JFrame{
                 lblResultado.setText(nf.format(resultado));
                 nuevoNumero = true;
                 hayPunto = false;
-            }
+            }// if si no esta vacio
         }
-    }
+    }// Fin operar
     
-}
+}// Fin clase calculadora

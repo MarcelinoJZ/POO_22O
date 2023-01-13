@@ -1,4 +1,4 @@
-
+// Contrsuctor para inicializarlos atributos 
 public class Servicio {
     String tipo;
     String habitacion;
